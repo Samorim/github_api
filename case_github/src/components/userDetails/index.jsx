@@ -9,7 +9,7 @@ const UserDetails = props => {
     return (
         <Container>
             <Name>{props?.name}</Name>
-            <Username>{props?.login}</Username>
+            <Username>#{props?.login}</Username>
             <Description>{props?.bio}</Description>
         </Container>
     );

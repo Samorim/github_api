@@ -68,7 +68,7 @@ export const HeaderSearchButton = styled.button`
     height: 30px;
     border-radius: 15px;
     border: none;
-    background: #FF7A00;
+    background: #d927d9;
     margin-left: 10px;
     display: flex;
     align-items: center;

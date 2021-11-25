@@ -9,3 +9,8 @@ export const Container = styled.main`
     justify-content: center;
     flex-direction: column;
     `
+export const Text = styled.main`
+    color: #fff;
+    font-size: 10px;
+    padding: 5px;
+`

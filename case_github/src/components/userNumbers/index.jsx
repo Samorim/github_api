@@ -1,5 +1,5 @@
 import React from 'react';
-//import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 //import Repos from '../../pages/repos';
 import { 
     Container,
@@ -7,13 +7,13 @@ import {
 } from "./styles";
 
 const UserNumbers = props => {
-   // const history = useHistory();
-  //  const handleOnClick = route => history.push(route);
+  const history = useNavigate();
+    const handleOnClick = route => history.push(route);
 
     return (
         <Container>
-            <NumberContainer>
-                <h1>{props?.repos.length}</h1>
+            <NumberContainer onClick={() => handleOnClick ('/repos')}>
+                <h1>{props?.repos}</h1>
                 <h2>Repositórios</h2>
             </NumberContainer>
 
